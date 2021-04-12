@@ -1,1 +1,347 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meha Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="css-circular-prog-bar.css" rel="stylesheet">
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) 
+            {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name)
+            {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) 
+            {
+              btns[i].addEventListener("click", function()
+              {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += "active";
+              });
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+        <div id="mysidenav" class="sidenav" style="position:fixed;">
+            <a href="#home" class="home">Home</a>
+            <a href="#about" class="about">About Me</a>
+            <a href="#portfolio" class="portfolio">Portfolio</a>
+            <a href="#contact" class="contact">Contact</a>
+        </div>
+        <section id="home">
+            <img src="ahmedabad3.jpg" style="height: 100vh; width: 213vh;position: absolute;">
+            <div class="hometext">
+                <span style="font-size: 10vh;">Hello,</span><br>
+                <span style="font-size: 5vh;">I'm <span style="color: orange;font-size: 5vh;">Meha Makwana</span></span>
+                <h3>From Ahmedabad, India</h3>
+            </div>            
+            <div class="profilephoto">
+                <img src="copy.jpeg" class="img-circle" style="border:2px solid grey; height: 6cm; width: 6cm; position: absolute;margin-top: 20vh;margin-left: 30%;">
+            </div>
+           
+        </section>
+        <section id="about">
+            <div class="aboutme">
+                <div class="box2">
+                    <span style="position: absolute;opacity: 10%;font-size: 20vh;">ABOUT ME</span>
+                    <label style="font-size: 5vh;position: absolute;padding-top: 11vh;padding-left:35vh;"><u>Know me more</u></label>
+                </div>
+                <div class="text1">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="Capture2.JPG" style="width:6cm; height: 7cm;"><br>
+                               <b>Meha Makwana</b>
+                        </div>
+                        <div class="card-body">
+                            Jr. .Net Web Developer
+                        </div>                        
+                    </div>
+                </div>
+                <div class="text2">
+                    I am professional <span style="color: orange;"><b>Web Developer</b></span>. Located at Ahmedabad, India.<br>
+                    I have completed my Bachelor’s in Computer Science Engineering with distinction. I have got skills in Web development. I am currently working as 
+                    Jr. .Net developer & freelancer with proven track record of success in developing and implementing web-based solutions, maintaining and updating web applications 
+                    and improving the whole programming process.<br>
+                    <button type="button" class="btn btn-info" style="margin-left: 600px;height: 40px;border-radius: 20px;"><a href="https://drive.google.com/file/d/1XtTFZYopBRKl7dPT4If12J778Zj73gt8/view?usp=sharing" style="color: white;">Download Resume</a></button>
+                </div>
+                <div class="html">
+                    <h2>HTML / CSS</h2>
+                    <div class="progress">
+                        <div class="progress-bar-warning progress-bar-striped progress-bar-animated" style="width:80%;"></div>
+                    </div>
+                </div>
+                <div class="react">
+                    <h2>React</h2>
+                    <div class="progress">
+                        <div class="progress-bar-warning progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                    </div>
+                </div>
+                <div class="Javascript">
+                    <h2>JavaScript/ jQuery</h2>
+                    <div class="progress">
+                        <div class="progress-bar-warning progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="net">
+                    <h2>.Net(MVC)</h2>
+                    <div class="progress">
+                        <div class="progress-bar-warning progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="sql">
+                    <h2>SQL</h2>
+                    <div class="progress">
+                        <div class="progress-bar-warning progress-bar-striped progress-bar-animated" style="width:60%"></div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="container" style="position: relative;">
+                                <img src="journey.jpg" alt="Avatar" style="height:270px; width: 300px;">
+                                <div class="top-right" style="position: absolute;top: 60px;padding-left: 130px;"><h1>Professional</h1></div>
+                                <div class="top-right" style="position: absolute;top: 100px;padding-left: 180px;"><h1>Journey</h1></div>
+                            </div>
+                        </div>    
+                        <div class="flip-card-back">
+                            <ul style="font-size: 2.5vh; padding: 10px;list-style:none;padding: 25px;">
+                                <li><b>Jr. .Net Developer | Variance Infotech Pvt. Ltd.</b><br>
+                                OCT 2020 – ONWARDS</li>
+                                <li><b>Business Analyst | Maven Bird Technologies</b><br>
+                                FEB 2020 – SEPT 2020</li>
+                                <li><b>Business Analyst (Trainee) | Amar InfoTech Pvt. Ltd.</b><br>
+                                SEPT 2019 – JAN 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>           
+            </div>    
+        </section>
+        <section id="portfolio">
+            <div class="box3">
+                <span style="position: absolute;opacity: 10%;font-size: 20vh;">Portfolio</span>
+                    <label style="font-size: 5vh;position: absolute;padding-top: 13vh;padding-left:25vh;"><u>My Journey</u></label>
+            </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('education')"> Education</button>
+                <button class="btn" onclick="filterSelection('hobby')"> Hobby</button>
+                <button class="btn" onclick="filterSelection('travel')"> Travel</button>
+            </div>
+            <div class="main">
+                <div class="row">
+                    <div class="column education">
+                        <div class="content">
+                            <a target="_blank" href="degree1.jpeg">
+                            <img src="degree1.jpeg" alt="Mountains" style="width:3.5cm; height: 3.5cm; float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">GTU Graduation Ceremony</h4> <br>
+                            <p style="padding-left: 20vh;"><b>Bachelor's Of Computer Engineering</b></p>
+                        </div>
+                    </div>
+                    <div class="column education">
+                        <div class="content">
+                            <a target="_blank" href="project.mp4" style="float: left;">
+                            <video width="150"; height="120"; controls;>
+                                <source src="project.mp4" type="video/mp4">
+                                <source src="project.ogg" type="video/ogg">
+                            </video></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Final Year Project</h4><br>
+                            <p style="padding-left: 20vh;"><b>Self Assisted Multipurpose Cart</b></p>
+                        </div>
+                    </div>
+                    <div class="column education">
+                        <div class="content">
+                            <a target="_blank" href="projectteam.jpeg">
+                            <img src="projectteam.jpeg" alt="Nature" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 7vh;">Project Team</h4>
+                            <p></p>
+                        </div>
+                    </div>                
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="food1.jpeg">
+                            <img src="food1.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Cooking</h4><br>
+                            <p style="padding-left: 20vh;"><b>Paneer Veggie Sandwhich</b></p>
+                        </div>
+                    </div>
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="food2.jpeg">
+                            <img src="food2.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Cooking</h4><br>
+                            <p style="padding-left: 20vh;"><b>Matka Biryani</b></p>
+                        </div>
+                    </div>
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="food3.jpeg">
+                                <img src="food3.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                                <h4 style="padding-left: 20vh;padding-top: 5vh;">Cooking</h4><br>
+                                <p style="padding-left: 20vh;"><b>Creamy Salad</b></p>
+                        </div>
+                    </div>
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="food4.jpeg">
+                                <img src="food4.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                                <h4 style="padding-left: 20vh;padding-top: 5vh;">Cooking</h4><br>
+                                <p style="padding-left: 20vh;"><b>Russian Fruit Dish</b></p>
+                        </div>
+                    </div>
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="cake1.jpeg">
+                                <img src="cake1.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                                <h4 style="padding-left: 20vh;padding-top: 5vh;">Cake Making</h4><br>
+                                <p style="padding-left: 20vh;"><b>Summer Special Mango Cake</b></p>
+                        </div>
+                    </div>
+                    <div class="column hobby">
+                        <div class="content">
+                            <a target="_blank" href="cake2.jpeg">
+                            <img src="cake2.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Cake Making</h4><br>
+                            <p style="padding-left: 20vh;"><b>Chocolate Cake</b></p>
+                        </div>
+                    </div>              
+                    <div class="column travel">
+                        <div class="content">
+                            <a target="_blank" href="orsang.jpeg">
+                            <img src="orsang1.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Outing</h4>
+                            <p style="padding-left: 20vh;"><b>Orsang Adventure Park</b></p>
+                        </div>
+                    </div>
+                    <div class="column travel">
+                        <div class="content">
+                            <a target="_blank" href="outing2.jpeg">
+                            <img src="tpr.jpeg" alt="Car" style="width:3.5cm; height: 3.5cm;float: left;"></a>
+                            <h4 style="padding-left: 20vh;padding-top: 5vh;">Outing</h4>
+                            <p style="padding-left: 20vh;"><b>Tirupati Rushivan</b></p>
+                        </div>
+                    </div>
+                    <div class="column travel">
+                        <div class="content">
+                            <a target="_blank" href="tpr1.mp4" style="float: left;">
+                            <video width="150"; height="120"; controls;>
+                                <source src="tpr1.mp4" type="video/mp4">
+                                <source src="tpr1.mp4" type="video/ogg">
+                            </video></a>
+                            <h4 style="padding-left: 25vh;padding-top: 5vh;">Outing</h4><br>
+                            <p style="padding-left: 25vh;"><b>Tirupati Rushivan</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </section>
+        <section id="contact">
+            <div class="box4">
+                <span style="position: absolute;opacity: 10%;font-size: 20vh;">Contact</span>
+                <label style="font-size: 5vh;position: absolute;padding-top: 13.5vh;padding-left:23vh;"><u>Get In Touch</u></label>
+            </div>
+            <div class="contactme">
+                <h1 style="color: cornflowerblue;">I'm available here</h1>
+                <h2 style="color: white;">1/7 Suramya Apartment,<br>
+                    Jai Mangal, Naranpura,<br>
+                    Ahmedabad – 380013</h2><br>
+                <h3 style="color: white;">Contact number :+91-9408018887</h3><br>
+            </div>
+            <div class="link">
+                <h4>Linked in <i style="font-size:24px" class="fa">&#xf08c;</i> : <a href="https://www.linkedin.com/in/meha-makwana-11031998/">Meha Makwana</a>
+                <!-- Git Hub <i style="font-size:24px" class="fa">&#xf09b;</i> : <a href="https://makwanameha.github.io/">Meha Makwana</a> -->
+                Mail me <i class="material-icons" style="font-size:24px;">&#xe0d0;</i> : <a href="mailto:makwanameha@gmail.com">makwanameha@gmail.com</a></h4>
+            </div>            
+        </section>
+    </body>
+</html>
