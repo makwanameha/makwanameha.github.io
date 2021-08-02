@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Makwana Meha Portfolio</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+     <!-- google charts api -->
+
+     <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Percentage');
+        data.addRows([
+          ['HTML/CSS/Bootstrap', 80],
+          ['JavaScript/jQuery', 70],
+          ['SQL', 60],
+          ['.NET (MVC)', 80],
+          ['React', 40]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Me as a compelete developer',
+                       'width':500,
+                       'height':400,
+                       colors: ['#f1c111'],
+                       };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              Meha Makwana
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">My Skills</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">Hi, I'm Meha Makwana</h1>
+                                   <h2 class="text-white" data-aos="fade-up">From Ahmedabad, Gujarat</h2>
+
+                                   <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Contact me quickly</a>
+                                   
+                                   <strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200">
+                                        <a href="#">Follow me :</a>
+                                        <a href="https://instagram.com/meha.1103?utm_medium=copy_link"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                                        <a href="https://www.facebook.com/meha.makwana.1103"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                                        <a href="https://www.linkedin.com/in/meha-makwana-11031998/"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                                   </strong>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-5">
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                              <img src="images/dp2.png" class="img-fluid" alt="Meha Makwana">
+                         </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                         <div class="about-info" style="text-align: justify;">
+
+                              <h2 class="mb-4" data-aos="fade-up"><strong>Who</strong> I'm ? and <strong>What</strong> I do ? 
+                              <br><br>
+                              <p>
+                                   I am professional <strong>Web Developer</strong>. Located at Ahmedabad, India.I have completed my Bachelor’s in Computer Science 
+                                   Engineering with distinction. I have got <a href="#">skills</a> in Web development. I am currently working as <strong> Jr. .Net developer</strong> 
+                                   & <strong>freelancer</strong> with proven track record of success in developing and implementing web-based solutions, maintaining 
+                                   and updating web applications and improving the whole programming process.
+                              </p>
+                              <p> <a href="https://drive.google.com/file/d/1XtTFZYopBRKl7dPT4If12J778Zj73gt8/view">Download my resume <i class="fa fa-download" aria-hidden="true"></i></a></p>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- PROJECT -->
+     <section class="project section-padding" id="project">
+          <div class="container-fluid">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">
+
+                        <h2 class="mb-5 text-center" data-aos="fade-up">
+                            Please take a look through my
+                            <strong>Journey </strong> till today
+                        </h2>
+
+                         <div class="owl-carousel owl-theme" id="project-slide">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="images/worklife.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Professional Journey</small>
+
+                                        <ul>
+                                             <li><b>Jr. .Net Developer [Variance Infotec Pvt. Ltd.]</b></li>
+                                             <li><b>Business Analyst [Maven Bird Technologies]</b></li>
+                                             <li><b>Business Analyst Trainee [Amar Infotech Pvt. Ltd.]</b></li>                                             
+                                        </ul>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/studylife.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Academic Journey</small>
+
+                                        <ul>
+                                             <li><b>10th SSC Board : 85% </b></li>
+                                             <li><b>12th HSC Board : 75% </b></li>
+                                             <li><b>Bachelor's Computer Science : 7.5 GPA </b></li>
+                                        </ul>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/coding.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>IT Skills</small>
+                                        <div class="row">
+                                             <div class="col-md-6">
+                                                  <li><b>C, C#, C++</b></li>
+                                                  <li><b>HTML, CSS, BOOTSTRAP</b></li>
+                                                  <li><b>WIREFRAME DESIGNING</b></li>
+                                             </div>
+                                             <div class="col-md-6">
+                                                  <li><b>JAVASCRIPT, JQUERY</b></li>
+                                                  <li><b>.NET MVC</b></li>
+                                                  <li><b>REACT JS</b></li>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/graphics.jpg" class="img-fluid" alt="Graphics Designing">
+
+                                   <div class="project-info">
+                                        <small>Other Skills - Graphics & Logo Designing</small>
+                                        <div class="row">
+                                             <div class="col-md-6">
+                                                  <li><b>Adobe Illustrator</b></li>
+                                                  <li><b>Adobe Photoshop</b></li>
+                                             </div>
+                                             <div class="col-md-6">
+                                                  <li><b>Corel Draw</b></li>
+                                                  <li><b>After Effects</b></li>
+                                             </div>
+                                        </div>                                        
+                                   </div>
+                              </div>
+
+                              <!-- <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Video</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Ultimate HealthCare</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div> -->
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section class="testimonial">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-5">
+                        <div class="contact-image" data-aos="fade-up">
+                          <img src="images/MySkills.png" class="img-fluid" alt="website">                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                         <h4 class="my-4 pt-1" data-aos="fade-up" data-aos-delay="100">
+                              I Have Developed My <strong>Skills</strong> Which Enable Me To Implement New Ideas With Latest <strong>Technology</strong>.
+                         </h4>
+                         <div id="chart_div" data-aos="fade-up" data-aos-delay="100"></div>                      
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-4">
+                         <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Following <strong>Passion</strong>.</h1>
+                    </div>
+
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+                         <h4 class="my-4">Contact Info</h4>
+
+                         <p class="mb-1">
+                              <i class="fa fa-phone mr-2 footer-icon"></i> 
+                              <a href="tel:+919408018887">+91 940 801 8887</a>
+                         </p>
+
+                         <p>
+                              <a href="#">
+                                   <i class="fa fa-envelope mr-2 footer-icon"></i>
+                                   <a href="mailto:makwanameha@gmail.com">makwanameha@gmail.com</a> 
+                              </a>
+                         </p>
+                    </div>
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                         <h4 class="my-4">My Location</h4>
+          
+                         <p class="mb-1">
+                         <i class="fa fa-home mr-2 footer-icon"></i> 
+                         Ahmedabad, Gujarat.
+                         </p>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+                         <p class="copyright-text">Copyright &copy; 2021, Meha Makwana
+                         <br>
+                         <a rel="nofollow noopener" href="http://www.swastikwebsolutions.com" target="_blank">Design: Meha Makwana</a></p>
+                    </div>
+
+                    <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    
+                         <ul class="footer-link">
+                              <li><a href="contact.html">Contact me</a></li>
+                              <li><a href="#">Hire me</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                         <ul class="social-icon">
+                              <li><a href="https://instagram.com/meha.1103?utm_medium=copy_link" class="fa fa-instagram"></a></li>
+                              <li><a href="https://www.facebook.com/meha.makwana.1103" class="fa fa-facebook-official"></a></li>
+                              <li><a href="https://www.linkedin.com/in/meha-makwana-11031998/" class="fa fa-linkedin-square"></a></li>
+                              <li><a href="https://github.com/makwanameha"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                              <li><a href="#">UpWork</i></a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
